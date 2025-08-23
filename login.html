@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .login{
+            padding: 30px;
+            margin: 100px auto;
+            border: solid;
+            text-align: center;
+            background-color: rgb(187, 187, 231);
+            border-radius: 8px;
+            width: 300px;
+        }
+        input[type="text"],input[type="password"]{
+           margin: 10px 0;
+           border-radius: 6px;
+           width: 90%;
+           padding: 10px;
+        }
+       
+        input[type="button"]{
+           margin: 20px;
+           height: 30px;
+           border-radius: 6px;
+        }
+        input[type="text"]:hover,
+        input[type="password"]:hover{
+         border-color: aqua;
+         transform: scale(1.05);
+        }
+
+        input[type="button"]:hover{
+            background-color: rgb(23, 117, 205);
+            border-color: aqua;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+       <label for="uname">UserName</label><br>
+        <input type="text"placeholder="Enter Your UserName" required><br>
+
+        <label for="password">PassWord</label><br>
+        <input type="password"placeholder="Enter Your PassWord" required><br>
+
+        <input type="button"value="Submit">
+
+        <div class="extra_link">
+            <a href="#">forgot Password</a>|
+            <a href="#">Create Account</a>
+        </div>
+    </div>
+</body>
+</html>
