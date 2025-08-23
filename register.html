@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: no-repeat center center fixed;
+            background-image: url(libary.jpg);
+            background-size: cover;
+            animation: bgmove 3s infinite alternate;
+        }
+
+        @keyframes bgmove {
+            0%   { background-position: left top; }
+            50%  { background-position: center center; }
+            100% { background-position: right bottom; }
+        }
+
+        .Register{
+            background-color: azure;
+            border: solid gray;
+            border-radius: 8px;
+            text-align: center;
+            margin: 20px auto;
+            padding: 30px;
+            width: 300px;
+        }
+
+        input[type=text], select {
+            padding: 10px;
+            border: yellow solid 2px;
+            background-color: beige;
+            margin: 10px 0;
+            width: 90%;
+            height: 40px;            
+            box-sizing: border-box;  
+            transition: all 0.3s ease-in-out;
+        }
+       
+        input[type=text]:hover,
+        select:hover {
+            border-color: orange;
+            background-color: #fff9d6;
+            box-shadow: 0px 0px 8px orange;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="Register">
+        <label for="UserName"> User Name</label><br>
+        <input type="text" id="UserName" placeholder="Enter User Name" required><br>
+
+        <label for="Id">Id</label><br>
+        <input type="text" id="Id" placeholder="Enter Collage Id" required><br>
+
+        <label for="Mail">Mail</label>
+        <input type="text" id="Mail" placeholder="Enter Mail" required><br>
+
+        <label for="Gender">Gender</label>
+            <select id="Gender" required>
+                <option value="">Select Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select>
+
+
+        <label for="PhoneNumber">PhoneNumber</label>
+        <input type="text" id="PhoneNumber" placeholder="PhoneNumber" required><br>
+
+        <label for="Semester">Semester</label>
+        <select name="Semester" id="Semester">
+            <option value="">Select Semester</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+        </select>
+
+        <label for="Department">Department</label>
+        <select name="Department" id="Department">
+            <option value="">Department</option>
+            <option>Computer Science</option>
+            <option>IT</option>
+            <option>Mechanical</option>
+            <option>Civil</option>
+            <option>Electrical</option>
+            <option>Electronics</option>
+            <option>Other</option>
+        </select>
+
+         
+            <label for="LibraryCard">Library Card No</label>
+            <input type="text" id="LibraryCard" placeholder="Enter Library Card Number">
+    </div>
+</body>
+</html>
